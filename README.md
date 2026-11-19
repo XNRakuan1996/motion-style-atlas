@@ -21,3 +21,15 @@
 | 等高线地貌 | [d3-contour](https://github.com/d3/d3-contour) 的等值线表达 |
 | 田野翻页书 | [StPageFlip](https://github.com/Nodlik/StPageFlip) 的书脊翻页与纸面遮挡 |
 | 亚麻十字绣 | [Embroiderly](https://github.com/embroidery-space/embroiderly) 的方格与十字针图案 |
+
+## 第二批 · 机械与手作
+
+[只看这一批的五秒小样](https://xnrakuan1996.github.io/motion-style-atlas/风格图鉴.html?batch=craft)。五款均独立绘制于「机械与手作.js」，只参考公开项目展示的成像或运动原理。源码、照片、演示视频及模型均未从这些项目复制。
+
+| 风格 | 视觉手法参考 |
+| --- | --- |
+| 钉线画 | [Image Stylization – Threading](https://github.com/piellardj/image-stylization-threading) 的钉点与弦线构图 |
+| 机械翻点牌 | [FlipDots](https://github.com/owenmcateer/FlipDots) 的双面圆片显示 |
+| 折纸萌芽 | [Origami Simulator](https://github.com/amandaghassaei/OrigamiSimulator) 的折痕与面片运动 |
+| 骨牌分叉 | [Matter.js](https://github.com/liabru/matter-js) 的刚体接触运动；小样按固定时间绘制倒伏接力 |
+| 走马盘逐格动画 | [Corridoritrope](https://github.com/autonk/Corridoritrope) 的环形画格排列 |

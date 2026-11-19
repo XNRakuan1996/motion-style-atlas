@@ -21,7 +21,7 @@ function render(){
  let words=$('search').value.trim().toLowerCase().split(/\s+/).filter(Boolean);
  const rows=[...custom,...catalog].filter(r=>{
  const aliases=Object.entries(terms).filter(([k,ids])=>ids.includes(r.base||r.id)).map(x=>x[0]).join(' ');
- const hay=[r.name,r.id,r.group,r.desc,r.use,r.mood,...(r.signals||[]),aliases].join(' ').toLowerCase();
+ const hay=[r.name,r.id,r.group,r.batch,r.desc,r.use,r.mood,...(r.signals||[]),aliases].join(' ').toLowerCase();
  return (!$('group').value||r.group===$('group').value)&&(!$('scope').value||custom.includes(r))&&words.every(w=>hay.includes(w))
  });
  $('count').textContent='显示 '+rows.length+' 款　·　开源扩展 '+extraStyles.length+' 款 / 原库 '+(catalog.length-extraStyles.length)+' 款 / 我的补充 '+custom.length+' 款';
@@ -43,6 +43,7 @@ document.querySelectorAll('.examples button').forEach(b=>b.onclick=()=>{$('scope
 $('backup').onclick=()=>{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify({version:1,styles:custom},null,2)],{type:'application/json'}));a.download='我的动效风格.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),2000)};
 $('restore').onclick=()=>$('jsonfile').click();
 $('jsonfile').onchange=async e=>{try{const f=e.target.files[0];if(!f)return;const d=JSON.parse(await f.text());if(d.version!==1||!Array.isArray(d.styles))throw Error('备份格式不匹配');const next=[...custom];for(const x of d.styles){if(typeof x.id!=='string'||!x.id.startsWith('user-')||typeof x.name!=='string'||typeof x.desc!=='string'||(x.photo&&!/^data:image\/(jpeg|png|webp);base64,/.test(x.photo)))throw Error('条目格式不匹配');if(next.some(r=>r.id===x.id&&r.name===x.name&&r.desc===x.desc&&r.photo===x.photo&&r.use===x.use&&r.base===x.base))continue;next.push({...x,id:next.some(r=>r.id===x.id)?'user-'+crypto.randomUUID():x.id,group:'我的风格',signals:[]})}write(next);$('scope').value='mine';$('group').value=$('search').value='';render();$('msg').textContent='已导入，重复条目自动跳过'}catch(err){$('msg').textContent='导入失败：'+err.message}finally{e.target.value='';setTimeout(()=>$('msg').textContent='',4500)}};
+if(new URLSearchParams(location.search).get("batch")==="craft") $('search').value="机械与手作";
 render();
 let sampleFrame=0,sampleTime=0,sampleStyle='',sampleRunning=false,sampleEpoch=0;
 function paintSample(){drawFarm($('farmCanvas'),sampleStyle,sampleTime);$('scrubber').value=sampleTime;$('clockLabel').textContent=sampleTime.toFixed(1)+' / 5 秒'}
