@@ -33,3 +33,15 @@
 | 折纸萌芽 | [Origami Simulator](https://github.com/amandaghassaei/OrigamiSimulator) 的折痕与面片运动 |
 | 骨牌分叉 | [Matter.js](https://github.com/liabru/matter-js) 的刚体接触运动；小样按固定时间绘制倒伏接力 |
 | 走马盘逐格动画 | [Corridoritrope](https://github.com/autonk/Corridoritrope) 的环形画格排列 |
+
+## 第三批 · 光影与介质
+
+[只看这一批的五秒小样](https://xnrakuan1996.github.io/motion-style-atlas/风格图鉴.html?batch=media)。本批在「光影与介质.js」独立绘制。参考项目提供媒介原理线索，图鉴使用自绘图形与简化动画，保持静音与可拖动。未打包参考项目的源码、图片或模型。
+
+| 风格 | 参考与实现 |
+| --- | --- |
+| 蓝晒植物印相 | [Cyanotype](https://github.com/rustyameadows/cyanotype) 的蓝晒色调；用标本移开、负形留下表现接触印相 |
+| 栅栏错视动画 | [Kinegram](https://github.com/jthawme/kinegram) 的栅片动画；四帧交错条带通过位移狭缝显示 |
+| 漏沙成画 | [Sandspiel](https://github.com/MaxBittker/sandspiel) 的重力颗粒；在幼苗模腔内按高度积沙 |
+| 柱面镜变形画 | [CylindricAnamorphosis](https://github.com/FDaCostaB/CylindricAnamorphosis) 的镜柱变形画；以同一组顶点绘制桌面展形与镜面还原示意 |
+| 打孔纸带乐谱 | [PaperStripMusicBox](https://github.com/waydenie/PaperStripMusicBox) 的光电读孔纸带；在固定读孔线配以簧片响应的视觉演绎 |

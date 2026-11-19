@@ -15,7 +15,8 @@ const extraStyles = [
     use:'农产品包装、乡村手作、节庆片头', mood:'亲切、手工', signals:['交叉落针 · 每格两针，逐行填色','经纬底布 · 从叶缘可以数出针脚'],
     source:'https://github.com/embroidery-space/embroiderly', sourceName:'Embroiderly', paint:linenStitch
   },
-  ...craftStyles
+  ...craftStyles,
+  ...mediaStyles
 ];
 for(const style of extraStyles){style.group='开源灵感扩展';catalog.push(style);farmLooks[style.id]=true;}
 const extensionById=new Map(extraStyles.map(s=>[s.id,s]));
