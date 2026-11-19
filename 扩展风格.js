@@ -16,7 +16,8 @@ const extraStyles = [
     source:'https://github.com/embroidery-space/embroiderly', sourceName:'Embroiderly', paint:linenStitch
   },
   ...craftStyles,
-  ...mediaStyles
+  ...mediaStyles,
+  ...labStyles
 ];
 for(const style of extraStyles){style.group='开源灵感扩展';catalog.push(style);farmLooks[style.id]=true;}
 const extensionById=new Map(extraStyles.map(s=>[s.id,s]));

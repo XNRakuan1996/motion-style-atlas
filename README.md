@@ -45,3 +45,15 @@
 | 漏沙成画 | [Sandspiel](https://github.com/MaxBittker/sandspiel) 的重力颗粒；在幼苗模腔内按高度积沙 |
 | 柱面镜变形画 | [CylindricAnamorphosis](https://github.com/FDaCostaB/CylindricAnamorphosis) 的镜柱变形画；以同一组顶点绘制桌面展形与镜面还原示意 |
 | 打孔纸带乐谱 | [PaperStripMusicBox](https://github.com/waydenie/PaperStripMusicBox) 的光电读孔纸带；在固定读孔线配以簧片响应的视觉演绎 |
+
+## 第四批 · 显影实验室
+
+[只看本批的五秒小样](https://xnrakuan1996.github.io/motion-style-atlas/风格图鉴.html?batch=lab)。五个样片独立绘制于「显影实验室.js」，沿用同一主题、时长和可拖动时钟。参考项目用于研究表现原理；未复制其代码、图像、声音或数据。
+
+| 风格 | 参考与本页实现 |
+| --- | --- |
+| 风洞烟线 | [Ten Minute Physics](https://github.com/matthias-research/pages/blob/master/tenMinutePhysics/17-fluidSim.html) 的流场可视化；本页用解析曲线表现绕流与尾迹 |
+| 冰窗枝晶 | [2D DLA Experiments](https://github.com/jasonwebb/2d-diffusion-limited-aggregation-experiments) 的枝状生长；小样以定时分枝复现前沿推进的形态 |
+| 示波器荧光描迹 | [osci-render](https://github.com/jameshball/osci-render) 的 XY 扫描；用移动光点和逐段衰减的余辉描画 |
+| 热敏出纸 | [escpresso](https://github.com/jflaflamme/escpresso) 的小票打印呈现；图文固定在纸条上，逐行通过机壳出纸口 |
+| 万花筒镜室 | [Kaleidos](https://github.com/coldhead/kaleidos) 的镜面重复；在十二个交替反射的扇区内绘制同一株苗的局部 |
